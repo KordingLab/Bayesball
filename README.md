@@ -1,6 +1,13 @@
 # Bayesball: Bayesian Integration in Professional Baseball Batting
 
-This is the repo for the paper, [Bayesball: Bayesian Integration in Professional Baseball Batting](). The repo is structured as follows:
+This is the repo for the paper, [Bayesball: Bayesian Integration in Professional Baseball Batting](). 
+
+<p align="center">
+   <img src="./img/figure1-crop.png" width=950 />
+<p>
+  
+
+The repo is structured as follows:
 
 ```bash
 .
@@ -16,4 +23,4 @@ This is the repo for the paper, [Bayesball: Bayesian Integration in Professional
 └── lib                         # All .py files called in main.ipynb
 ```
 
-Please reach out with any issues or comments. 
+Everything can be run from the `main.ipynb` notebook. Please reach out with any issues or comments. 
