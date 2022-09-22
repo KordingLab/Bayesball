@@ -25,7 +25,7 @@ if not load_data:
     data = data[~data['game_type'].isin(['E','S'])]
 
     # Dump file for faster access later
-    data.to_pickle("../data/statcast_data_2015-2021_raw.pkl")
+    data.to_pickle("/data/statcast_data_2015-2021_raw.pkl")
 else:    
     # Read raw data
     print("Loading data...",end="")
@@ -94,6 +94,10 @@ data.dropna(subset=["vertical_contact_error"],inplace=True)
 # Convert contact error to % of strikezone
 data.loc[:,'vertical_contact_error_norm'] = np.array(data.loc[:,'vertical_contact_error']  / (12*(data.loc[:,'sz_top'] - data.loc[:,'sz_bot'])),dtype="float") #  (baseball_radius*2)
 data.dropna(subset=["vertical_contact_error_norm"],inplace=True)
+
+# Save cleaned data
+if not load_data:
+    data.to_pickle("/data/statcast_data_2015-2021_cleaned.pkl")
 
 ###########################################
 #                                         #

@@ -1,2 +1,1 @@
-data/statcast_data_2015-2021_cleaned.pkl
-data/statcast_data_2015-2021_raw.pkl
+data/*.pkl
