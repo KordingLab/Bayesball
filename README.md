@@ -1,6 +1,6 @@
 # Bayesball: Bayesian Integration in Professional Baseball Batting
 
-This is the repo for the paper, [Bayesball: Bayesian Integration in Professional Baseball Batting](). 
+This is the repo for the paper, [Bayesball: Bayesian Integration in Professional Baseball Batting](https://www.biorxiv.org/content/10.1101/2022.10.12.511934v1). 
 
 <p align="center">
    <img src="./img/figure1-crop.png" width=950 />
